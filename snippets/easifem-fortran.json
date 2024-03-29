@@ -75,39 +75,69 @@
     "body": "REAL(DFP), PARAMETER :: $0",
     "description": "real parameter :: "
   },
+  "loi": {
+    "prefix": "loi",
+    "body": "LOGICAL(LGT), OPTIONAL, INTENT(IN) :: ",
+    "description": "logical optional in"
+  },
+  "li": {
+    "prefix": "li",
+    "body": "LOGICAL(LGT), INTENT(IN) :: ",
+    "description": "logical in"
+  },
+  "loo": {
+    "prefix": "loo",
+    "body": "LOGICAL(LGT), OPTIONAL, INTENT(OUT) :: ",
+    "description": "logical optional out"
+  },
+  "lo": {
+    "prefix": "lo",
+    "body": "LOGICAL(LGT), INTENT(OUT) :: ",
+    "description": "logical out"
+  },
+  "loio": {
+    "prefix": "loio",
+    "body": "LOGICAL(LGT), OPTIONAL, INTENT(INOUT) :: ",
+    "description": "logical optional inout"
+  },
+  "lio": {
+    "prefix": "lio",
+    "body": "LOGICAL(LGT), INTENT(INOUT) :: ",
+    "description": "logical inout"
+  },
   "ioi": {
     "prefix": "ioi",
-    "body": "INTEGER( I4B ), OPTIONAL, INTENT( IN ) :: ",
+    "body": "INTEGER( I4B ), OPTIONAL, INTENT(IN) :: ",
     "description": "real optional in"
   },
   "ii": {
     "prefix": "ii",
-    "body": "INTEGER( I4B ), INTENT( IN ) :: ",
+    "body": "INTEGER( I4B ), INTENT(IN) :: ",
     "description": "real in"
   },
   "ioo": {
     "prefix": "ioo",
-    "body": "INTEGER( I4B ), OPTIONAL, INTENT( OUT ) :: ",
+    "body": "INTEGER( I4B ), OPTIONAL, INTENT(OUT) :: ",
     "description": "real optional out"
   },
   "io": {
     "prefix": "io",
-    "body": "INTEGER( I4B ), INTENT( OUT ) :: ",
+    "body": "INTEGER( I4B ), INTENT(OUT) :: ",
     "description": "real out"
   },
   "ioio": {
     "prefix": "ioio",
-    "body": "INTEGER( I4B ), OPTIONAL, INTENT( INOUT ) :: ",
+    "body": "INTEGER( I4B ), OPTIONAL, INTENT(INOUT) :: ",
     "description": "real optional inout"
   },
   "iio": {
     "prefix": "iio",
-    "body": "INTEGER( I4B ), INTENT( INOUT ) :: ",
+    "body": "INTEGER( I4B ), INTENT(INOUT) :: ",
     "description": "real inout"
   },
   "civ": {
     "prefix": "civ",
-    "body": "INTEGER( C_INT ), VALUE, INTENT( IN ) :: ",
+    "body": "INTEGER( C_INT ), VALUE, INTENT(IN) :: ",
     "description": "cint value in"
   },
   "real": {
@@ -122,32 +152,32 @@
   },
   "roi": {
     "prefix": "roi",
-    "body": "REAL( DFP ), OPTIONAL, INTENT( IN ) :: ",
+    "body": "REAL( DFP ), OPTIONAL, INTENT(IN) :: ",
     "description": "real optional in"
   },
   "ri": {
     "prefix": "ri",
-    "body": "REAL( DFP ), INTENT( IN ) :: ",
+    "body": "REAL( DFP ), INTENT(IN) :: ",
     "description": "real in"
   },
   "roo": {
     "prefix": "roo",
-    "body": "REAL( DFP ), OPTIONAL, INTENT( OUT ) :: ",
+    "body": "REAL( DFP ), OPTIONAL, INTENT(OUT) :: ",
     "description": "real optional out"
   },
   "ro": {
     "prefix": "ro",
-    "body": "REAL( DFP ), INTENT( OUT ) :: ",
+    "body": "REAL( DFP ), INTENT(OUT) :: ",
     "description": "real out"
   },
   "roio": {
     "prefix": "roio",
-    "body": "REAL( DFP ), OPTIONAL, INTENT( INOUT ) :: ",
+    "body": "REAL( DFP ), OPTIONAL, INTENT(INOUT) :: ",
     "description": "real optional inout"
   },
   "rio": {
     "prefix": "rio",
-    "body": "REAL( DFP ), INTENT( INOUT ) :: ",
+    "body": "REAL( DFP ), INTENT(INOUT) :: ",
     "description": "real inout"
   },
   "logical": {
@@ -315,17 +345,17 @@
   "intentin": {
     "prefix": "in",
     "description": "intent in",
-    "body": "INTENT( IN ) :: $0"
+    "body": "INTENT(IN) :: $0"
   },
   "intentout": {
     "prefix": "out",
     "description": "intent out",
-    "body": "INTENT( OUT ) :: $0"
+    "body": "INTENT(OUT) :: $0"
   },
   "intentinout": {
     "prefix": "inout",
     "description": "intent in out",
-    "body": "INTENT( INOUT ) :: $0"
+    "body": "INTENT(INOUT) :: $0"
   },
   "generic": {
     "prefix": "generic",
@@ -376,9 +406,9 @@
     "body": [
       "INTERFACE",
       "MODULE SUBROUTINE ${1}( Obj, Msg, UnitNo )",
-      "\tCLASS( ${0} ), INTENT( IN ) :: Obj",
-      "\tCHARACTER( LEN = * ), INTENT( IN ) :: Msg",
-      "\tINTEGER( I4B ), OPTIONAL, INTENT( IN ) :: UnitNo",
+      "\tCLASS( ${0} ), INTENT(IN) :: Obj",
+      "\tCHARACTER( LEN = * ), INTENT(IN) :: Msg",
+      "\tINTEGER( I4B ), OPTIONAL, INTENT(IN) :: UnitNo",
       "END SUBROUTINE ${1}",
       "END INTERFACE",
       ""
