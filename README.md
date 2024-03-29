@@ -1,9 +1,10 @@
-# Snippets Md
+# Configuring EASIFEM 
+
+## Config
 
 This repository contains the markdown snippets for writing documentation of easifem. The snippets are `json` files and they should work with the visual studio code and neovim.
 
-## Using snippets in neovim
-
+### Using snippets in neovim
 
 Clone this repository by using one of the ways given below:
 
@@ -18,7 +19,6 @@ SSH:
 ```bash
 git@github.com:easifem/snippets.git
 ```
-
 
 GitHub CLI:
 
@@ -52,4 +52,8 @@ Open the `package.json` file and add the following.
   "path": "./easifem-fortran.json"
 },
 ```
+
+## Fish scripts
+
+You can read about fish scripts installation and usage [here](./scripts/README.md)
 
