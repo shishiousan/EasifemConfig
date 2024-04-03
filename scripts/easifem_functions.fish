@@ -13,3 +13,4 @@ source $EASIFEM_CONFIG_PATH/scripts/classBuild.fish
 source $EASIFEM_CONFIG_PATH/scripts/baseInstall.fish
 source $EASIFEM_CONFIG_PATH/scripts/classInstall.fish
 source $EASIFEM_CONFIG_PATH/scripts/evim.fish
+source $EASIFEM_CONFIG_PATH/scripts/eview.fish
