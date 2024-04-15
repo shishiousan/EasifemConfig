@@ -4,7 +4,7 @@ function eview -d "view easifem doc"
     cd $docs/(fd --type d | fzf)
 
     if command -q glow
-        glow (fd -I --type f -e md -e F90 -e f90  | fzf )
+        glow -p (fd -I --type f -e md -e F90 -e f90  | fzf )
     else if command -q bat
         bat (fd -I --type f -e md -e F90 -e f90  | fzf )
     else
