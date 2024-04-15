@@ -234,6 +234,15 @@
       "! summary: \t"
     ]
   },
+  "shion": {
+    "prefix": "shion",
+    "description": "shion",
+    "body": [
+      "!> author: Shion Shimizu",
+      "! date: \t",
+      "! summary: \t"
+    ]
+  },
   "szaghi": {
     "prefix": "szaghi",
     "description": "szaghi",
@@ -416,6 +425,11 @@
       ""
     ]
   },
+  "disp": {
+    "prefix": "dis",
+    "body": "call display($1,$2)",
+    "description": "simplest display method"
+  },
   "error": {
     "prefix": "error",
     "description": "Raise error",
@@ -447,6 +461,14 @@
     "body": [
       "CALL e%RaiseError(modName //'::'//myName// ' - '// &",
       "\t& '[INTERNAL ERROR] :: $0' )"
+    ]
+  },
+  "wl error": {
+    "prefix": "wlerror",
+    "description": "Raise error with line number",
+    "body": [
+      "CALL e%RaiseError(modName //'::'//myName// ' - '// &",
+      "\t& 'Check line number $0'//tostring(__LINE__))"
     ]
   },
   "info": {
@@ -775,6 +797,11 @@
     "prefix": "mod",
     "body": "module ${1:name}\n\n\timplicit none\n\t$0\n\nend module $1\n",
     "description": "module"
+  },
+  "neq": {
+    "prefix": "neq",
+    "body": ".ne.",
+    "description": "Not-Equal"
   },
   "neqv": {
     "prefix": "neqv",
