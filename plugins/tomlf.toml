@@ -1,0 +1,12 @@
+name = "tomlf"
+isExtpkg = true
+isActive = true
+buildSystem = "cmake"
+git = 'github.com/toml-f/toml-f/'
+buildType = "Release" # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = false
+libName = "tomlf"
+runtest = true
+license = "GPL3"
+buildOptions = [""]
