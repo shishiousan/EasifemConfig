@@ -1,0 +1,11 @@
+name = "sparsekit"
+isExtPkg = true
+isActive = true
+buildSystem = "cmake"
+git = "github.com/easifem/sparsekit"
+buildType = "Release" # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = true
+libName = "Sparsekit"
+runtest = true
+license = "GPL3"

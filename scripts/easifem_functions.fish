@@ -14,3 +14,5 @@ source $EASIFEM_CONFIG_PATH/scripts/baseInstall.fish
 source $EASIFEM_CONFIG_PATH/scripts/classInstall.fish
 source $EASIFEM_CONFIG_PATH/scripts/evim.fish
 source $EASIFEM_CONFIG_PATH/scripts/eview.fish
+source $EASIFEM_CONFIG_PATH/scripts/_get_easifem_flag.fish
+source $EASIFEM_CONFIG_PATH/scripts/_easifem_output_reshape.fish

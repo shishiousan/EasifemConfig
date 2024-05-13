@@ -1,1 +1,10 @@
-Quiet = true
+envName="dev"
+
+[dev]
+buildDir = "/tmp/easifem/build/"
+installDir= "/tmp/easifem/install/"
+sourceDir= "/tmp/easifem/src/"
+buildType = "Release" # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = false
+buildSystem = "cmake"

@@ -1,0 +1,11 @@
+name = "lapack95"
+isExtPkg = true
+isActive = true
+buildSystem = "cmake"
+git = "github.com/easifem/lapack95"
+buildType = "Release" # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = true
+libName = "LAPACK95"
+runtest = true
+license = "GPL3"

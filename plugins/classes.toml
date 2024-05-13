@@ -1,0 +1,20 @@
+name = "classes"
+isActive = true
+buildSystem = "cmake"
+# sourceDir = "/tmp/easifem/src/classes/"
+# buildDir = "/tmp/easifem/build/classes/"
+# installDir = "/tmp/easifem/install/classes/"
+git = 'github.com/easifem/classes.git'
+buildType = "Release" # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = false
+libName = "easifemClasses"
+targetName = "easifemClasses"
+projectName = "easifemClasses"
+
+runtest = true
+license = "GPL3"
+buildOptions = [ "-D USE_GMSH_SDK:BOOL=ON"]
+
+dependencies = ["base"]
+

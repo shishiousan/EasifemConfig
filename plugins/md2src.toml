@@ -1,0 +1,10 @@
+name = "md2src"
+isExtPkg = false
+isActive = false
+sourceDir = "/tmp/easifem/go-cli/src/extpkgs/md2src/"
+buildDir = "/tmp/easifem/go-cli/build/extpkgs/md2src/"
+installDir = "/tmp/easifem/go-cli/install/extpkgs/md2src/"
+git = "github.com/easifem/md2src"
+buildOptions = ["-D CMAKE_BUILD_TYPE:STRING=Release",
+  "-D BUILD_SHARED_LIBS:BOOL=ON"
+]
