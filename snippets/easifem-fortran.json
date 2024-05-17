@@ -182,6 +182,46 @@
     "body": "REAL( DFP ), INTENT(INOUT) :: ",
     "description": "real inout"
   },
+  "complex": {
+    "prefix": "cmp",
+    "body": "COMPLEX(DFPC) ",
+    "description": "complex"
+  },
+  "cma": {
+    "prefix": "cma",
+    "body": "COMPLEX( DFPC ), ALLOCATABLE :: $1",
+    "description": "complex allocatable"
+  },
+  "cmoi": {
+    "prefix": "cmoi",
+    "body": "COMPLEX( DFPC ), OPTIONAL, INTENT(IN) :: ",
+    "description": "complex optional in"
+  },
+  "cmi": {
+    "prefix": "cmi",
+    "body": "COMPLEX( DFPC ), INTENT(IN) :: ",
+    "description": "complex in"
+  },
+  "cmoo": {
+    "prefix": "cmoo",
+    "body": "COMPLEX( DFPC ), OPTIONAL, INTENT(OUT) :: ",
+    "description": "complex optional out"
+  },
+  "cmo": {
+    "prefix": "cmo",
+    "body": "COMPLEX( DFPC ), INTENT(OUT) :: ",
+    "description": "complex out"
+  },
+  "cmoio": {
+    "prefix": "cmoio",
+    "body": "COMPLEX( DFPC ), OPTIONAL, INTENT(INOUT) :: ",
+    "description": "complex optional inout"
+  },
+  "cmio": {
+    "prefix": "cmio",
+    "body": "COMPLEX( DFPC ), INTENT(INOUT) :: ",
+    "description": "complex inout"
+  },
   "logical": {
     "prefix": "logi",
     "description": "logical",
