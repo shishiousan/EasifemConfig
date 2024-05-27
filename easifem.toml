@@ -1,10 +1,12 @@
 envName="dev"
 
 [dev]
-buildDir = "/tmp/easifem/build/"
-installDir= "/tmp/easifem/install/"
-sourceDir= "/tmp/easifem/src/"
+buildDir = "${HOME}/.easifem/easifem/build/"
+installDir= "${HOME}/.easifem/easifem/install/"
+sourceDir= "${HOME}/.easifem/easifem/src/"
+lintDir= "${HOME}/.easifem/easifem/lint/"
 buildType = "Release" # "Debug", "Both"
 buildSharedLibs = true
 buildStaticLibs = false
 buildSystem = "cmake"
+
