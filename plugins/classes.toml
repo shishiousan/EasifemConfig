@@ -1,16 +1,17 @@
 name = "classes"
 isActive = true
 buildSystem = "cmake"
-# sourceDir = "/tmp/easifem/src/classes/"
-# buildDir = "/tmp/easifem/build/classes/"
-# installDir = "/tmp/easifem/install/classes/"
 git = 'github.com/easifem/classes.git'
-buildType = "Release" # "Debug", "Both"
+sourceDir = "${HOME}/Dropbox/easifem/easifem-classes/"
+buildType = "Debug" 
 buildSharedLibs = true
 buildStaticLibs = false
 libName = "easifemClasses"
 targetName = "easifemClasses"
 projectName = "easifemClasses"
+
+param.MAX_NODE_TO_NODE = 256
+param.MAX_NODE_TO_ELEM = 128
 
 runtest = true
 license = "GPL3"
