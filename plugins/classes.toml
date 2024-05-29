@@ -3,7 +3,7 @@ isActive = true
 buildSystem = "cmake"
 git = 'github.com/easifem/classes.git'
 sourceDir = "${HOME}/Dropbox/easifem/easifem-classes/"
-buildType = "Debug" 
+buildType = "Debug"
 buildSharedLibs = true
 buildStaticLibs = false
 libName = "easifemClasses"
@@ -15,7 +15,10 @@ param.MAX_NODE_TO_ELEM = 128
 
 runtest = true
 license = "GPL3"
-buildOptions = [ "-D USE_GMSH_SDK:BOOL=ON"]
+
+# cmakePrefixPath=["${HOME}/.easifem/easifem/install/base/"]
+
+buildOptions = [ "-D USE_GMSH_SDK:BOOL=ON", "-D USE_LIS:BOOL=ON"]
 
 dependencies = ["base"]
 
