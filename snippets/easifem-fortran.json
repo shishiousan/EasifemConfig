@@ -427,8 +427,8 @@
   },
   "disp": {
     "prefix": "dis",
-    "body": "call display($1,$2)",
-    "description": "simplest display method"
+    "body": "call Display($1,$2)",
+    "description": "simplest Display method"
   },
   "error": {
     "prefix": "error",
@@ -595,6 +595,36 @@
   "char": {
     "prefix": "char",
     "body": "CHARACTER(${1:*}) $0",
+    "description": "Character"
+  },
+  "chi": {
+    "prefix": "chi",
+    "body": "CHARACTER(${1:*}), INTENT(IN) :: $0",
+    "description": "Character"
+  },
+  "choi": {
+    "prefix": "choi",
+    "body": "CHARACTER(${1:*}),OPTIONAL, INTENT(IN) :: $0",
+    "description": "Character"
+  },
+  "cho": {
+    "prefix": "cho",
+    "body": "CHARACTER(${1:*}), INTENT(OUT) :: $0",
+    "description": "Character"
+  },
+  "choo": {
+    "prefix": "choo",
+    "body": "CHARACTER(${1:*}), OPTIONAL, INTENT(OUT) :: $0",
+    "description": "Character"
+  },
+  "chio": {
+    "prefix": "chio",
+    "body": "CHARACTER(${1:*}), INTENT(INOUT) :: $0",
+    "description": "Character"
+  },
+  "choio": {
+    "prefix": "choio",
+    "body": "CHARACTER(${1:*}), OPTIONAL, INTENT(INOUT) :: $0",
     "description": "Character"
   },
   "close": {
@@ -848,10 +878,45 @@
     "body": "program ${1:name}\n\n\timplicit none\n\t$0\n\nend program $1\n",
     "description": "program"
   },
+  "progUse": {
+    "prefix": "prog",
+    "body": "PROGRAM ${1:name}\n${2:libname}\n\tIMPLICIT NONE\n\t$0\n\nEND PROGRAM $1\n",
+    "description": "program with use statement"
+  },
   "t": {
     "prefix": "t",
     "body": "type(${1:type name}) :: ",
     "description": "Quick Custom Type"
+  },
+  "ti": {
+    "prefix": "ti",
+    "body": "type(${1:type name}), INTENT(IN) :: ",
+    "description": "Type"
+  },
+  "toi": {
+    "prefix": "toi",
+    "body": "type(${1:type name}), OPTIONAL, INTENT(IN) :: ",
+    "description": "Type"
+  },
+  "to": {
+    "prefix": "to",
+    "body": "type(${1:type name}), INTENT(OUT) :: ",
+    "description": "Type"
+  },
+  "too": {
+    "prefix": "too",
+    "body": "type(${1:type name}), OPTIONAL, INTENT(OUT) :: ",
+    "description": "Type"
+  },
+  "tio": {
+    "prefix": "tio",
+    "body": "type(${1:type name}), INTENT(INOUT) :: ",
+    "description": "Type"
+  },
+  "toio": {
+    "prefix": "toio",
+    "body": "type(${1:type name}), OPTIONAL, INTENT(INOUT) :: ",
+    "description": "Type"
   },
   "i": {
     "prefix": "i",
@@ -1093,5 +1158,30 @@
       "END SUBROUTINE obj_Import",
       "END INTERFACE"
     ]
+  },
+  "easifemClasses": {
+    "prefix": "ec",
+    "description": "use easifemClasses",
+    "body": "USE easifemClasses"
+  },
+  "easifemClassesOnly": {
+    "prefix": "eco",
+    "description": "use easifemClasses with only",
+    "body": "USE easifemClasses, ONLY:  $0"
+  },
+  "easifemBase": {
+    "prefix": "eb",
+    "description": "use easifemBase",
+    "body": "USE easifemClasses"
+  },
+  "easifemBaseOnly": {
+    "prefix": "ebo",
+    "description": "use easifemBase with only",
+    "body": "USE easifemBase, ONLY: $0"
+  },
+  "useOnly": {
+    "prefix": "uo",
+    "description": "use statement with only",
+    "body": "USE ${1:libname}, ONLY: $0"
   }
 }
