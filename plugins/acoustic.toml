@@ -1,0 +1,18 @@
+name = "acoustic"
+isActive = true
+buildSystem = "cmake"
+git = 'github.com/easifem/acousticKernel.git'
+sourceDir = "${HOME}/Dropbox/easifem/easifem-acoustic"
+installDir=  "${HOME}/.easifem/install/kernels/"
+buildType = "Debug" 
+buildSharedLibs = true
+buildStaticLibs = true
+libName = "easifemAcoustic"
+targetName = "easifemAcoustic"
+projectName = "easifemAcoustic"
+
+runtest = true
+license = "GPL3"
+# buildOptions = [ "-D USE_GMSH_SDK:BOOL=ON"]
+
+dependencies = ["base", "classes"]

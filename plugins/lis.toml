@@ -3,6 +3,7 @@ isExtPkg = true
 isActive = true
 buildSystem = "make"
 git = 'github.com/easifem/lis/'
+sourceDir = "${HOME}/Dropbox/easifem/lis/"
 buildType = "Release" # "Debug", "Both"
 buildSharedLibs = true
 buildStaticLibs = false
