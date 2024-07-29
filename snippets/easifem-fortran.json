@@ -1131,7 +1131,7 @@
     "body": [
       "#ifdef DEBUG_VER",
       "CALL e%RaiseInformation(modName //'::'//myName// ' - '// &",
-      "\t& '[START] ')",
+      "'[START] ')",
       "#endif",
       "${0}"
     ]
@@ -1142,7 +1142,7 @@
     "body": [
       "#ifdef DEBUG_VER",
       "CALL e%RaiseInformation(modName //'::'//myName// ' - '// &",
-      "\t& '[END] ')",
+      "'[END] ')",
       "#endif",
       "${0}"
     ]
