@@ -1,12 +1,32 @@
-envName="dev"
+envName = "release"
+_envName = "dev"
 
 [dev]
-buildDir = "${HOME}/.easifem/easifem/build/"
-installDir= "${HOME}/.easifem/easifem/install/"
-sourceDir= "${HOME}/.easifem/easifem/src/"
-lintDir= "${HOME}/.easifem/easifem/lint/"
-buildType = "Release" # "Debug", "Both"
+installDir = "${HOME}/.easifem/dev/install/"
+buildDir = "${HOME}/.easifem/dev/build/"
+sourceDir = "${HOME}/.easifem/src/"
+lintDir = "${HOME}/.easifem/lint/"
+buildType = "Debug"                          # "Debug", "Both"
 buildSharedLibs = true
-buildStaticLibs = false
+buildStaticLibs = true
 buildSystem = "cmake"
 
+[release]
+buildDir = "${HOME}/.easifem/build/"
+installDir = "${HOME}/.easifem/install/"
+sourceDir = "${HOME}/.easifem/src/"
+lintDir = "${HOME}/.easifem/lint/"
+buildType = "Release"                    # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = true
+buildSystem = "cmake"
+
+[old]
+buildDir = "${HOME}/.easifem/old/build/"
+installDir = "${HOME}/.easifem/old/install/"
+sourceDir = "${HOME}/.easifem/src/"
+lintDir = "${HOME}/.easifem/old/lint/"
+buildType = "Release"                        # "Debug", "Both"
+buildSharedLibs = true
+buildStaticLibs = true
+buildSystem = "cmake"
