@@ -1,4 +1,3 @@
-IncludePath=["/usr/include","/usr/local/include"]
-Flags = ["-Wall","-Wextra","-Werror","-std=c++11","-O3"]
-Compiler = "g++"
-CompilerPath = "/usr/bin/g++"
+BuildType = "Debug"
+BuildDir = "/tmp/build"
+TargetLibs = ["easifemClasses"]

@@ -1,18 +1,17 @@
-
-export EASIFEM_INSTALL_DIR=~/.easifem/install 
-export EASIFEM_BUILD_DIR=~/.easifem/build 
-export EASIFEM_SOURCE_DIR=~/.easifem/src 
-export EASIFEM_BASE=~/.easifem/install/easifem/base 
+export EASIFEM_INSTALL_DIR=~/.easifem/install
+export EASIFEM_BUILD_DIR=~/.easifem/build
+export EASIFEM_SOURCE_DIR=~/.easifem/src
+export EASIFEM_BASE=~/.easifem/install/easifem/base
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${EASIFEM_BASE}/lib"
-export EASIFEM_CLASSES=~/.easifem/install/easifem/classes 
+export EASIFEM_CLASSES=~/.easifem/install/easifem/classes
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${EASIFEM_CLASSES}/lib"
-export EASIFEM_EXTPKGS=~/.easifem/install/easifem/extpkgs 
+export EASIFEM_EXTPKGS=~/.easifem/install/easifem/extpkgs
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${EASIFEM_EXTPKGS}/lib"
-export EASIFEM_APP=~/.easifem/install/easifem/app 
+export EASIFEM_APP=~/.easifem/install/easifem/app
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${EASIFEM_APP}/lib"
-export EASIFEM_MATERIALS=~/.easifem/install/easifem/materials 
+export EASIFEM_MATERIALS=~/.easifem/install/easifem/materials
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${EASIFEM_MATERIALS}/lib"
-export EASIFEM_KERNELS=~/.easifem/install/easifem/kernels 
+export EASIFEM_KERNELS=~/.easifem/install/easifem/kernels
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${EASIFEM_KERNELS}/lib"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:${EASIFEM_EXTPKGS}/lib/pkgconfig"
 export PATH="${PATH}:${EASIFEM_EXTPKGS}/bin"
